@@ -1,0 +1,236 @@
+.header-services{
+    background-image: url(../images/hero/10d.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-wraper{
+    display: flex;
+}
+.dedicated-image{
+    background-color: whitesmoke;
+}
+.dedicated-image img{
+    width: 700px;
+    height: 500px;
+    border-bottom: 4px solid $primary;
+    display: block;
+}
+.dedicated-image video{
+    width: 700px;
+    height: 500px;
+    // border-bottom: 4px solid $primary;
+    display: block;
+    background-color: whitesmoke;
+}
+.dedicated-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.dedicated-text h2{
+    padding-bottom: 40px;
+    color: $primary;
+    font-size: 40px;
+}
+.dedicated-text p{
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.541);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.truckload-wraper{
+    display: flex;
+}
+#truckload{
+    background-color: $primary;
+}
+#truckload h2{
+    color: white;
+    font-size: 40px;
+}
+#truckload p{
+    background-color: rgba(245, 245, 245, 0.281);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+//services we offer
+.mozaik{
+    background: url(../images/mozaik.jpg);
+    padding: 50px;
+}
+.service-kz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.service-kz li{
+    font-size: 22px;
+    padding: 0 40px;
+    color: white;
+    margin: 20px;
+}
+
+.checked{
+    color: white;
+    margin-right: 5px;
+}
+.checked:hover{
+    color: rgb(30, 158, 209);
+}
+.service-item{
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 35px;
+    padding: 13px;
+}
+
+//mediaqueries-------------
+
+//desktop
+@media (min-width: 1024px) and (max-width: 1200px){
+    .main-wraper{
+        flex-direction: column;
+    }
+    .dedicated-image video{
+        margin: 0 auto;
+        height: unset;
+    }
+    .dedicated-text { 
+        flex-direction: row;
+        p{
+            width: 50%;
+            font-size: 18px;
+        }
+        h2{
+            margin-right: 40px;
+        }
+    }
+    .truckload-wraper{
+        flex-direction: column-reverse;
+    }
+    #truckload p{
+        font-size: 18px;
+    }
+}
+//Laptop
+@media (min-width: 768px) and (max-width: 1023px){
+    .service-item{
+        font-size: 16px;
+    }
+    .main-wraper{
+        flex-direction: column;
+    }
+    .truckload-wraper{
+        flex-direction: column-reverse;
+    }
+    .service-kz li{
+        margin: 20px 0;
+    }
+}
+//Tablet
+@media (min-width: 481px) and (max-width: 767px){
+    .service-item{
+        font-size: 16px;
+    }
+    .main-wraper{
+        flex-direction: column;
+    }
+    .truckload-wraper{
+        flex-direction: column-reverse;
+    }
+    .service-kz li{
+        margin: 20px 0;
+    }
+    .dedicated-image video{
+        height: unset;
+        width: 100%;
+    }
+    .dedicated-text {
+        h2{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    #truckload{
+        h2{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .service-kz{
+        justify-content: left;
+    }
+}
+//Mobile devices
+@media (min-width: 220px) and (max-width: 480px){
+    
+    .main-wraper{
+        flex-direction: column;
+    }
+    .truckload-wraper{
+        flex-direction: column-reverse;
+    }
+    .dedicated-text{
+        padding: 0;
+    }
+    .dedicated-text p{
+        width: 100%;
+        font-size: 14px;
+        font-family: 'Playfair Display', serif;
+        border-radius: 0;
+        padding: 20px;
+    }
+    .dedicated-text h2{
+        padding: 20px;
+        font-size: 28px;
+    }
+    .dedicated-image video{
+        width: -webkit-fill-available;
+        height: unset;
+    }
+    #truckload {
+        h2{
+            font-size: 28px;
+        }
+        p{
+            font-size: 14px;
+            border-radius: 0;
+            padding: 20px;
+        }
+        
+    }
+
+    .mozaik{
+        padding: 0 20px;
+    }
+    .service-kz{
+        justify-content: start;
+        padding: 0;
+    }
+    .service-kz li{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .border-bottom{
+        border-top: none;
+    }
+    .service-item{
+        font-size: 14px;
+    }
+}
+

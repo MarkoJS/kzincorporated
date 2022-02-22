@@ -1,0 +1,561 @@
+//header
+.header-about{
+    background-image: url(../images/hero/careersHero.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-title{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-title h2{
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-style: italic;
+}
+.about-title p{
+    color: $primary;
+}
+
+//New about us 07.feb____________
+.about-row{
+    display: flex;
+    margin-bottom: 5px;
+}
+.about-row-left{
+    flex: 50%;
+    background-color: whitesmoke;
+    flex-direction: column;
+    padding: 120px 100px;
+
+    p{
+        color: $gray1;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    span{
+        color: $primary;
+        font-weight: bold;
+    }
+    a{
+        border: 1px solid $primary;
+        border-radius: 100px;
+        color: #2a292c;
+        font-family: "Public Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25.6px;
+        padding: 10px 23px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+    }
+    a:hover{
+        border: 1px solid rgba(42, 41, 44, 0.2);
+        color: white;
+        background-color: #2a292c;
+    }
+}
+
+.about-row2{
+    display: flex;
+}
+.about-row-right{
+    flex: 50%;
+    // background-color: $primary;
+    background-color: #f1592a;
+    padding: 120px 100px;
+
+    p{
+        color: white;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+.about-row-left2{
+    background:linear-gradient(rgba(128, 128, 128, 0.801)), url(../images/rush.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+    width: 50vw;
+    flex: 50%;
+    margin-right: 2.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+
+    p{
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.about-row-right2{
+    flex: 50%; 
+}
+.about-small{
+    display: flex;
+    height: 50%;
+}
+.small-top{
+    margin: 0 2.5px 5px;
+    flex: 50%;
+    background: url(../images/repair.png);
+    background-size: cover;
+    background-position: center;
+    p{
+        color: white;
+    }
+}
+.small-couple{
+    background: url(../images/volvoHistory.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.small-bottom{
+    margin: 0 2.5px;
+    flex: 50%;
+    background:url(../images/truck-wash.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.about-people{
+    margin: 0 2.5px;
+    flex: 50%;
+    background: url(../images/small-stat.jpg);
+    background-size: cover;
+}
+
+//new about sections 11.feb CIRCLES
+.about-culture{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 5%;
+
+}
+.about-sec{
+    width: 300px;
+    height: 300px;
+    border: 4px solid $primary;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    p{
+        font-weight: bold;
+        color: $gray1; 
+        font-size: 14px; 
+    }
+}
+.culture-img{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    border-top: 2px solid $primary;
+
+    img{
+        width: 100%;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+}
+
+//HISTORY start
+.about-history{
+    display: flex;
+}
+.history-left{
+    // background-color: $primary;
+    background: url(../images/mozaik.jpg);
+    padding: 50px 250px;
+    flex-grow: 1;
+    text-align: center;
+}
+.history-left p{
+    font-size: 34px;
+    color: white;
+    line-height: 2;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+}
+
+//NUMBERS
+.numbers{
+    text-align: center;
+}
+.numbers-title{
+    padding-bottom: 50px;
+}
+.numbers-title p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a292c;
+}
+.numbers-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.number-info h2{
+    color: $gray1;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.number-txt p{
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: $primary;
+    font-weight: bold;
+}
+
+//vision and mission
+.goals {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.171), white), url(../images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+}
+.vision {
+    padding: 80px;
+    background-color: white;
+    margin: 0 25px;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.border-bottom{
+    border-bottom:  3px solid $primary;
+}
+.vision-head{
+    padding: 0 0 20px 15px;
+}
+.vision-head h2{
+    font-size: 28px;
+    color: #534d4d;
+}
+.vision-txt p {
+    color: #232122;
+    font-size: 18px;
+    word-spacing: 1.6px;
+    font-family: 'Playfair Display', serif;
+}
+.border-top{
+    border-top: 3px solid $primary;
+}
+
+//footer
+.social-holder{
+    padding: 50px 0;
+}
+.social-holder h2{
+    padding-bottom: 35px;
+    font-size: 2em;
+    color: $primary;
+}
+.social-holder ul{
+    display: flex;
+}
+.social-logo{
+    width: 40px;
+    margin-right: 15px;
+    transition: .5s ease-in-out;
+}
+
+//Mediaqueries START
+//desktop
+@media (min-width: 1024px) and (max-width: 1200px){
+    .about-title{
+        padding: 0 100px;
+        text-align: center;
+    }
+
+    //pictures (4img)
+    .about-row-left2{
+        padding: 0 30px;
+    }
+    .small-top{
+        background-position: right;
+    }
+    .about-people{
+        background-position: right;
+    }
+    //circles
+    .about-culture{
+        padding: 0;
+    }
+    .history-left{
+        padding: 50px 100px;
+    }
+    .goals{
+        padding: 0 100px;
+    }
+}
+//Laptop
+@media (min-width: 768px) and (max-width: 1023px){
+    .about-title h2{
+        font-size: 30px;
+    }
+    //whitesmoke-orange boxes
+    .about-row-left{
+        padding: 120px 10px;
+    }
+    .about-row-right{
+        padding: 120px 10px;
+    }
+    //pictures
+    .about-row2{
+        flex-direction: column;
+    }
+    .about-row-left2{
+        width: unset;
+
+        p{
+            padding: 60px;
+        }
+    }
+    .about-small{
+        height: 300px;
+    }
+    .small-top{
+        margin: 2.5px;
+    }
+    //circles
+    .about-culture{
+        padding: 0;
+        flex-direction: column;
+    }
+    .culture-img {
+        border-top: none;
+        img{
+            margin: 50px 0;
+        }
+    }
+    //orange banner
+    .history-left {
+        padding: 50px;
+        text-align: left;
+        p{
+            line-height: unset;
+        }
+    }
+    .goals{
+        padding: 0;
+    }
+    .vision{
+        background-color: #ffffffa8;
+        padding: 50px;
+    }
+    .rights{
+        text-align: center;
+    }
+}
+//Tablet
+@media (min-width: 481px) and (max-width: 767px){
+    .about-title{
+        text-align: center;
+    }
+    .about-title h2{
+        font-size: 24px;
+    }
+    //whitesmoke and orange boxes
+    .about-row{
+        flex-direction: column;
+    }
+    .about-row-left{
+        padding: 60px 40px;
+    }
+    .about-row-right{
+        padding: 60px 40px;
+    }
+
+    //pictures
+    .about-row2{
+        flex-direction: column;
+    }
+    .about-row-left2{
+        width: unset;
+        padding: 0;
+        p{
+            padding: 40px;
+        }
+    }
+    .about-small{
+        height: 300px;
+    }
+    .small-top{
+        margin: 2.5px;
+        background-position: right;
+    }
+    .about-people{
+        background-position: center;
+    }
+    //circles
+    .about-culture{
+        padding: 0;
+        flex-direction: column;
+    }
+    .culture-img {
+        width: 300px;
+        border-top: none;
+        
+        img{
+            margin: 50px 0;
+        }
+    }
+
+    .history-left{
+        padding: 30px;
+        p{
+            line-height: normal;
+        }
+    } 
+
+    .goals{
+        flex-direction: column;
+        padding: 0;
+    }
+    .vision{
+        clip-path: none;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.678);
+        width: 70%;
+    }
+    .vision-txt{
+        padding: 0 10px 10px;
+    }
+    .border-bottom{
+        border-bottom: none;
+        border-top: 3px solid $primary;
+        margin-bottom: 15px;
+    }
+    .number-txt{
+        padding: 0 15px;
+    }
+
+}
+
+//Mobile devices
+@media (min-width: 220px) and (max-width: 480px){
+    .about-title{
+        text-align: center;
+        height: 30vh;
+    }
+    .about-title h2{
+        font-size: 24px;
+    }
+    
+    //whitesmoke and orange boxes
+    .about-row{
+        flex-direction: column;
+    }
+    .about-row-left{
+        padding: 40px 20px;
+
+        a{
+            background-color: $primary;
+        }
+    }
+    .about-row-right{
+        padding: 40px 20px;
+
+        p{
+            line-height: unset;
+            font-size: 14px;
+        }
+    }
+
+    //pictures
+    .about-row2{
+        flex-direction: column;
+    }
+    .about-row-left2{
+        width: unset;
+        padding: 0;
+        p{
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+    }
+    .about-small{
+        height: 300px;
+    }
+    .small-top{
+        margin: 2.5px;
+        background-position: right;
+    }
+    .about-people{
+        background-position: center;
+    }
+    .hide{
+        display: none;
+    }
+    //circles
+    .about-culture{
+        padding: 0;
+        flex-direction: column;
+    }
+    .culture-img {
+        width: unset;
+        border-top: none;
+        img{
+            margin: 50px 0;
+        }
+    }
+
+    .history-left{
+        padding: 20px;
+        text-align: center;
+    }
+    .history-left p{
+        font-size: 18px;
+        line-height: 1;
+    }
+    .numbers-container{
+        flex-direction: column;
+    }
+    .numbers-title{
+        padding-bottom: 25px;
+    }
+    .number-info h2{
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+    .number-txt p{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .goals{
+        flex-direction: column;
+        padding: 0;
+    }
+    .vision{
+        clip-path: none;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.678);
+    }
+    .vision-txt{
+        padding: 0 10px 10px;
+    }
+    .border-bottom{
+        // border-bottom: none;
+        // border-top: 3px solid $primary;
+        margin-bottom: 15px;
+    }
+}

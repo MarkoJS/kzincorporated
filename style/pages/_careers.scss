@@ -1,0 +1,304 @@
+.header-careers{
+    background-image: url(../images/hero/8a.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.careers-photo{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.075), white), url(../images/3a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    padding: 0 300px;
+    display: flex;
+    align-items: center;
+}
+.careers-benefits h2{
+    margin-bottom: 40px;
+    width: fit-content;
+    color: $primary;
+    border-bottom: 1px solid $gray1;
+    font-size: 40px;
+}
+.careers-benefits p{
+    width: 50%;
+    color: #2a292c;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+//careers PROGRAM
+.program{
+    padding: 50px 300px;
+    background-color: $primary
+}
+.program-title{
+    margin-bottom: 40px;
+}
+.program-title h2{
+    color: $gray1;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+.program-holder{
+    display: flex;
+    margin-bottom: 40px;
+    border-bottom: 1px solid orange;
+    justify-content: center;
+}
+.program-img{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.program-img img{
+    width: inherit;
+    border-radius: 10px;
+}
+.program-img2{
+    display: none;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.program-img2 img{
+    width: inherit;
+    border-radius: 10px;
+}
+.program-text p{
+    width: 600px;
+}
+.program-text{
+    margin: 0 50px;
+}
+.program-text h2{
+    color: $gray1;
+}
+.program-text p{
+    color: white;
+    font-size: 18px;
+    // padding: 40px 0;
+}
+.question{
+    margin-bottom: 40px;
+    font-size: 10px;
+    color: black;
+}
+.program-btn{
+    // background-color: $gray1;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    font-family: "Public Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px;
+    padding: 10px 23px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.program-btn:hover{
+    color: #2a292c;
+    background-color: white;
+    border: 1px solid white;
+}
+//Pet section
+.pet{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    flex-wrap: wrap;
+}
+.pet-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background:url(../images/pet.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pet-txt{
+    padding: 0 20px;
+    align-items: center;
+    p{
+        color: white;
+        font-size: 22px;
+    }
+}
+
+//mediaqueries
+//desktop
+@media (min-width: 1024px) and (max-width: 1200px){
+    .careers-photo{
+        padding: 0 15px;
+    }
+    .program{
+        padding: 15px;
+    }
+    .program-img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .program-text{
+        width: 50%;
+        p{
+            width: unset;
+        }
+    }
+}
+//Laptop
+@media (min-width: 768px) and (max-width: 1023px){
+    .careers-photo{
+        padding: 50px;
+        height: unset;
+    }
+    .careers-benefits p{
+        width: 70%;
+    }
+    .program{
+        padding: 15px;
+    }
+    .program-holder{
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    .program-img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .program-text{
+        width: 50%;
+        p{
+            width: unset;
+        }
+    }
+}
+//Tablet
+@media (min-width: 481px) and (max-width: 767px){
+    .careers-photo{
+        padding: 0;
+    }
+    .careers-benefits{
+        padding: 0 10px;
+    }
+    .careers-benefits p{
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .program{
+        padding: 0;
+
+    }
+    .program-title{
+        margin-bottom: 0;
+        padding: 40px;
+        background-color: whitesmoke;
+    }
+    .program-title h2{
+        border-radius: unset;
+        
+    }
+    .program-holder{
+        flex-direction: column;
+        border-bottom: none;
+        margin-bottom: unset;
+        padding-bottom: 20px;
+    }
+    .program-img{
+        width: 100%;
+    }
+    .program-img img{
+        border-radius: unset;
+    }
+    .program-text p{
+        width: 100%;
+    }
+    .program-img2{
+        width: 100%;
+        display: block;
+    }
+    .program-img2 img{
+        border-radius: unset;
+    }
+    #ownerOperators{
+        display: none;
+    }
+
+}
+//responsive for Mobile
+@media (min-width: 220px) and (max-width: 480px){
+    .careers-photo{
+        padding: 0;
+        height: 60vh;
+    }
+    .careers-benefits{
+        padding: 0 10px;
+    }
+    .careers-benefits p{
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .program{
+        padding: 0;
+
+    }
+    .program-title{
+        margin-bottom: 0;
+        background-color: whitesmoke;
+        padding: 20px;
+    }
+    .program-title h2{
+        border-radius: unset;
+        
+    }
+    .program-holder{
+        flex-direction: column;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+    }
+    .program-img{
+        width: 100%;
+    }
+    .program-img img{
+        border-radius: unset;
+    }
+    .program-text {
+        margin: 0 20px;
+        p{
+            width: 100%;
+            padding: 20px 0 0px;
+            font-size: 14px;
+        }
+    } 
+    .program-img2{
+        width: 100%;
+        display: block;
+    }
+    .program-img2 img{
+        border-radius: unset;
+    }
+    #ownerOperators{
+        display: none;
+    }
+    .pet-txt {
+        text-align: center;
+        p{
+            font-size: 14px;
+        }
+    }
+}
