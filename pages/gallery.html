@@ -29,6 +29,11 @@
     <meta name="twitter:title" content="Gallery - KZ Inc">
     <meta name="twitter:description" content="Since March 2010, KZ Incorporated has been on a mission to deliver new levels of service for the USA logistic industry, for our drivers, and our partners.">
     <meta name="twitter:image" content="../images/KZlogo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header-gallery">
@@ -74,20 +79,20 @@
         <div class="wrapper2">
             <div id="carousel">
                 <div id="content2">
-                    <img class="item" src="../images/gallery/n.jpg" />
-                    <img src="../images/gallery/a.jpg" class="item" />
-                    <img src="../images/gallery/b.jpg" class="item" />
-                    <img src="../images/gallery/c.jpg" class="item" />
-                    <img src="../images/gallery/d.jpg" class="item" />
-                    <img src="../images/gallery/f.jpg" class="item" />
-                    <img src="../images/gallery/g.jpg" class="item" />
-                    <img class="item" src="../images/gallery/h.jpg" />
-                    <img src="../images/gallery/j.jpg" class="item" />
-                    <img src="../images/gallery/k.jpg" class="item" />
-                    <img src="../images/gallery/l.jpg" class="item" />
-                    <img src="../images/gallery/e.png" class="item" />
-                    <img src="../images/gallery/n.jpg" class="item" />
-                    <img src="../images/gallery/o.jpg" class="item" />
+                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" id="img1"  onclick="enlargeImg()" />
+                    <img src="../images/gallery/a.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/b.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/c.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/d.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/f.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/g.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/h.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/j.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/k.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/l.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/e.png" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
+                    <img src="../images/gallery/o.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
                 </div>
             </div>
             <button id="prev">
@@ -102,6 +107,39 @@
                     <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
                 </svg>
             </button>
+        </div>
+        <!--MODAL GALLERY-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../images/gallery/a.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../images/gallery/b.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../images/gallery/c.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../images/gallery/d.jpg" style="width:100%">
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
         </div>
     </section>
     <div class="gallery-title" >
@@ -358,6 +396,65 @@
 
         let width3 = carousel3.offsetWidth;
         window.addEventListener("resize", e => (width3 = carousel3.offsetWidth));
+    </script>
+    <!-- <script>
+        // Get the img object using its Id
+      img = document.getElementById("img1");
+      // Function to increase image size
+      function enlargeImg() {
+        // Set image size to 1.5 times original
+        img.style.transform = "scale(1.5)";
+        // Animation effect 
+        img.style.transition = "transform 0.25s ease";
+        img.style.position = "absolute";
+        img.style.left = "30%";
+      }
+      // Function to reset image size
+      function resetImg() {
+        // Set image size to original
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+      }
+    </script> -->
+
+    <!--01.03.2022 MODAL img-->
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
     </script>
     <script src="../js/main.js"></script>
 </body>

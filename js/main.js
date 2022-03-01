@@ -34,16 +34,12 @@ window.onscroll = ()=> {
 
 }
 
-
-
 //Observer on Page load
 window.addEventListener('DOMContentLoaded', setup); 
-
 function setup() {
     const options = {
         rootMargin: '0px 0px -100px 0px'
     }
-
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
@@ -62,33 +58,3 @@ function setup() {
     paras.forEach(p => observer.observe(p));
 }
 
-//gallery5 example
-const buttons = document.querySelectorAll('.project');
-const overlay = document.querySelector('.overlay');
-const overlayImage = document.querySelector('.overlay__inner img');
-
-function open(e) {
-  overlay.classList.add('open');
-  const src= e.currentTarget.querySelector('img').src;
-  overlayImage.src = src;
-}
-
-function close() {
-  overlay.classList.remove('open');
-}
-
-buttons.forEach(button => button.addEventListener('click', open));
-overlay.addEventListener('click', close);
-
-
-//marquee
-
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.marquee-content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
