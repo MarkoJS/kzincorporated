@@ -11,8 +11,10 @@
     padding: 0;
     box-sizing: border-box;
     // font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-weight: 500;
+
 }
 html{
     scroll-behavior: smooth;
@@ -46,7 +48,7 @@ li {
 }
 .nav-logo.stickeys{
     width:  200px;
-    height: 105px;
+    height: 70px; //105px is ok
     background: url(../images//KZlogo.png);
     background-position: center;
     background-size: contain;
@@ -316,8 +318,12 @@ li {
     flex-wrap: wrap;
 }
 .card{
+    display: flex;
     padding: 20px;
     width: 450px;
+    height: 700px;
+    flex-flow: wrap;
+    
 }
 .card-img{
     height: 300px;
@@ -393,7 +399,7 @@ li {
     opacity: 0;
     height: 100%;
     // background: linear-gradient(45deg,#3754ba,green, $primary) ;
-    background: linear-gradient(45deg,$gray1, $primary) ;
+    background: linear-gradient(45deg,#fe2903, $primary) ; //from red to primary is better for me
     // border-radius: 10px;
     border-radius: 40px;
     position: relative;
@@ -479,7 +485,7 @@ li {
 .app__inner{
     max-width: 1060px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 100px 30px;
     h3{
         padding: 30px;
         font-size: 48px;
@@ -495,7 +501,7 @@ li {
         border: 1px solid $primary;
         border-radius: 100px;
         // color: #2a292c;
-        color: #4e9cdb;
+        color: $primary;
         font-family: "Public Sans", Arial, sans-serif;
         font-size:22px;
         font-weight: 600;
@@ -503,6 +509,7 @@ li {
         padding: 10px 23px;
         position: relative;
         transition: 0.3s ease-in-out;
+        background-color: antiquewhite;
     }
     a:hover{
         border: 1px solid rgba(42, 41, 44, 0.2);
@@ -524,6 +531,10 @@ li {
 }
 .contact-left{
     margin-right: 150px;
+}
+.contact-info{
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 .contact-info h2{
     padding-bottom: 20px;
@@ -633,9 +644,10 @@ li {
     background-color: #2a292c;
 }
 .rights{
-    padding: 20px 400px;
+    padding: 20px ; //padding left was 400px
     background-color: $primary;
     color: white;
+    text-align: center;
 }
 
 //intersection Observer
@@ -731,7 +743,7 @@ h1, p {
     }
     .contact-left{
         text-align: center;
-        margin-right: 0%;
+        margin-right: 2%;
     }
     .social ul{
         justify-content: center;

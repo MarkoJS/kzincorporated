@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font awesome-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
@@ -33,6 +34,126 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100&display=swap" rel="stylesheet">
 
+    <!--Font Family (Philosopher)-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding: 50px 0;
+            /* left: 0; */
+            top: 20%;
+            /* width: 50%; */
+            width: 600px;
+            /* height: 100%; */
+            overflow: auto;
+            background-color: rgb(233, 148, 38);
+        }
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+/* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+        /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+     .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: white;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    img {
+        margin-bottom: -4px;
+    }
+
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    </style>
 </head>
 <body>
     <header class="header-gallery">
@@ -78,20 +199,20 @@
         <div class="wrapper2">
             <div id="carousel">
                 <div id="content2">
-                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" id="img1"  onclick="enlargeImg()" />
-                    <img src="../images/gallery/a.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)"/>
-                    <img src="../images/gallery/b.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(2)"/>
-                    <img src="../images/gallery/c.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(3)"/>
-                    <img src="../images/gallery/d.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(4)"/>
-                    <img src="../images/gallery/f.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(5)"/>
-                    <img src="../images/gallery/g.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(6)"/>
-                    <img src="../images/gallery/h.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(7)"/>
-                    <img src="../images/gallery/j.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(8)"/>
-                    <img src="../images/gallery/k.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(9)"/>
-                    <img src="../images/gallery/l.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(10)"/>
-                    <img src="../images/gallery/e.png" class="item hover-shadow cursor" onclick="openModal();currentSlide(11)"/>
-                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(12)"/>
-                    <img src="../images/gallery/o.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(13)"/>
+                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(1)" />
+                    <img src="../images/gallery/aa.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(2)"/>
+                    <img src="../images/gallery/b.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(3)"/>
+                    <img src="../images/gallery/c.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(4)"/>
+                    <img src="../images/gallery/d.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(5)"/>
+                    <img src="../images/gallery/f.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(6)"/>
+                    <img src="../images/gallery/g.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(7)"/>
+                    <img src="../images/gallery/h.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(8)"/>
+                    <img src="../images/gallery/j.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(9)"/>
+                    <img src="../images/gallery/k.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(10)"/>
+                    <img src="../images/gallery/l.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(11)"/>
+                    <img src="../images/gallery/e.png" class="item hover-shadow cursor" onclick="openModal();currentSlide(12)"/>
+                    <img src="../images/gallery/n.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(13)"/>
+                    <img src="../images/gallery/o.jpg" class="item hover-shadow cursor" onclick="openModal();currentSlide(14)"/>
                 </div>
             </div>
             <button id="prev">
@@ -111,24 +232,29 @@
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
-        
+
                 <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="../images/gallery/a.jpg" style="width:100%">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="../images/gallery/n.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
+                    <div class="numbertext">2 / 6</div>
+                    <img src="../images/gallery/aa.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
                     <img src="../images/gallery/b.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
+                    <div class="numbertext">5 / 6</div>
                     <img src="../images/gallery/c.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
+                    <div class="numbertext">6 / 6</div>
                     <img src="../images/gallery/d.jpg" style="width:100%">
                 </div>
         
