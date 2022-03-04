@@ -19,7 +19,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 a {
     text-decoration: none;
 }
@@ -644,10 +643,10 @@ li {
     background-color: #2a292c;
 }
 .rights{
-    padding: 20px ; //padding left was 400px
+    padding: 20px 20% ; //padding left was 400px
     background-color: $primary;
     color: white;
-    text-align: center;
+    // text-align: right;
 }
 
 //intersection Observer

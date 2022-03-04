@@ -37,123 +37,6 @@
     <!--Font Family (Philosopher)-->
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
 
-    <style>
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding: 50px 0;
-            /* left: 0; */
-            top: 20%;
-            /* width: 50%; */
-            width: 600px;
-            /* height: 100%; */
-            overflow: auto;
-            background-color: rgb(233, 148, 38);
-        }
-        /* Modal Content */
-        .modal-content {
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 0;
-            width: 90%;
-            max-width: 1200px;
-        }
-
-/* The Close Button */
-    .close {
-        color: white;
-        position: absolute;
-        top: 10px;
-        right: 25px;
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #999;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .mySlides {
-        display: none;
-    }
-
-    .cursor {
-        cursor: pointer;
-    }
-
-        /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-     .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: white;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    img {
-        margin-bottom: -4px;
-    }
-
-    .caption-container {
-        text-align: center;
-        background-color: black;
-        padding: 2px 16px;
-        color: white;
-    }
-
-    .demo {
-        opacity: 0.6;
-    }
-
-    .active,
-    .demo:hover {
-        opacity: 1;
-    }
-
-    img.hover-shadow {
-        transition: 0.3s;
-    }
-
-    .hover-shadow:hover {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    </style>
 </head>
 <body>
     <header class="header-gallery">
@@ -362,69 +245,44 @@
                     <h4 style="margin: 20px 0;"><i class="fa fa-envelope"></i> office@kzinc.com</h4>
                     <h4><i class="fa fa-phone"></i> 312-285-2353</h4>
                     <h4 style="margin: 20px 0;"><i class="fas fa-clock"></i> Mon-Fri: 9.00 - 17.00</h4>
+                    <span><a href="#"><img class="social-logo" src="../images/svg/facebook kz.svg" alt="kz facebook"></a></span>
+                    <span><a href="#"><img class="social-logo" src="../images/svg/instagram kz.svg" alt="kz instagram"></a></span>
+                    <span><a href="#"><img class="social-logo" src="../images/svg/linkedin kz.svg" alt="kz linkedin"></a></span>
                 </div>
-                <div class="social">
-                    <h2>Social</h2>
-                    <ul>
-                        <li><a href="#"><img class="social-logo" src="../images/svg/fb1.svg" alt="kz facebook"></a></li>
-                        <li><a href="#"><img class="social-logo" src="../images/svg/insta.svg" alt="kz instagram"></a></li>
-                        <li><a href="#"><img class="social-logo" src="../images/svg/linkedin.svg" alt="kz linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="contact-map">
-                    <h2>How to reach us</h2>
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=306%20S%20Halsted%20St%20Chicago,%20IL%2060661&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                href="https://2piratebay.org"></a><br>
-                            <style>
-                                .mapouter {
-                                    position: relative;
-                                    text-align: right;
-                                    height: 300px;
-                                    width: 400px;
-                                }
-                            </style><a href="https://www.embedgooglemap.net">google maps embed iframe</a>
-                            <style>
-                                .gmap_canvas {
-                                    overflow: hidden;
-                                    background: none !important;
-                                    height: 300px;
-                                    width: 400px;
-                                }
-                            </style>
+                
+                <div class="contact-form">
+                    <h2>Get in touch</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <div class="form-input">
+                                <input type="text" placeholder="First name">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Last name">
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <div class="form-input">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Tel">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-text">
+                                <textarea name="msg" id="" cols="30" rows="10" placeholder="Your msg"></textarea>
+                            </div>
+                        </div>
+                        <a href="#">Submit</a>
+                    </form> 
                 </div>
             </div>
-            <div class="contact-form">
-                <h2>Get in touch</h2>
-                <form action="">
-                    <div class="form-group">
-                        <div class="form-input">
-                            <input type="text" placeholder="First name">
-                        </div>
-                        <div class="form-input">
-                            <input type="text" placeholder="Last name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-input">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-input">
-                            <input type="text" placeholder="Tel">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-text">
-                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your msg"></textarea>
-                        </div>
-                    </div>
-                    <a href="#">Submit</a>
-                </form> 
+            <div class="contact-map">
+                <h2>How to reach us</h2>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="680" id="gmap_canvas" src="https://maps.google.com/maps?q=306%20s%20halsted%20street&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:680px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedded google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:680px;width:400px;}</style></div></div>
             </div>
+            
         </div>
         <div class="rights">
             All rights reserved 2022. KZ inc

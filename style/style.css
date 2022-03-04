@@ -1660,13 +1660,13 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding: 50px 0;
   /* left: 0; */
-  top: 20%;
-  width: 50%;
+  top: 7%;
+  width: 700px;
   /* height: 100%; */
   overflow: auto;
-  background-color: black;
+  background-color: #f6914a;
 }
 
 /* Modal Content */
@@ -2547,10 +2547,9 @@ li {
 }
 
 .rights {
-  padding: 20px;
+  padding: 20px 20%;
   background-color: #f6914a;
   color: white;
-  text-align: center;
 }
 
 h1, p {
